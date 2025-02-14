@@ -1,0 +1,410 @@
+
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff0000 !important;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+/* .main-btn{
+    background-color: rgb(181, 48, 48);
+} */
+
+.main-btn {
+    background-color: red !important;
+    color: white !important;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background-color: darkred !important;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', 'sans-script';
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.main-btn, .white-btn {
+    background-color: #b11717 !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-btn:hover, .white-btn:hover {
+    background-color: darkred !important;
+}
+
+.top-banner {
+    width: 100%;
+    background: url('../images/bg/bg-1.jpg') ;
+    background-size: cover;
+    padding: 10rem 0 9.375rem;
+}
+
+@media(max-width:768px){
+    .top-banner {
+        width: 100%;
+        background: url('../images/bg/bg-1.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 0rem 0 9.375rem;
+    }
+}
+
+.top-banner {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background: url('../images/bg/bg-1.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+/* Dark Overlay for Better Readability */
+
+.top-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+
+/* Ensuring Content is on Top of the Background */
+.top-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* Responsive Text Adjustments */
+h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+
+
+p {
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .top-banner {
+        height: auto;
+        padding: 8rem 0;
+        text-align: center;
+    }
+}
+
+.counter-section{
+    background-color: #ad5b5b;
+    padding: 2.5rem 0;
+
+}
+.counter-section p{
+    color: #fff;
+    text-transform: uppercase;
+}
+@media (max-width: 991px) {
+
+    .text-content{
+        width:100%;
+    }
+
+.navigation-wrap .navbar-brand img{
+    height: 3.8125rem;
+
+}
+.navigation-wrap{
+    text-align: center;
+    background-color: #fff;
+}
+.navigation-wrap  .nav-link{
+    line-height: 1.875rem;
+}
+}
+
+
+
+/* About Section Design */
+.above-section{
+    background: #fff;
+}
+.about-section .card,
+.about-section .card img{
+    border-radius: 0.625rem;
+}
+.about-section .text-sec{
+    padding-left:2rem;
+
+}
+
+
+/* Food type section design */
+
+.food-type{
+    padding-top: 3.25rem;
+}
+.food-type ul li{
+    font-size: 1rem;
+    color:rgb(96, 90, 90);
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+
+}
+
+.story-section {
+    width: 100%;
+    min-height: 500px;
+    background: url('/images/bg/bg-2.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Dark Overlay for Better Readability */
+.story-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(207, 200, 200, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+/* Ensure Text Content Appears on Top */
+.story-section .text-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Heading & Text Styling */
+.story-section h2 {
+    color: #b11717;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.story-section p {
+    color: white;
+    font-size: 1.1rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+p {
+    color: #333; /* Ensure text is visible */
+    font-size: 1rem; /* Set readable size */
+    visibility: visible; /* Ensure it's not hidden */
+    display: block; /* Make sure it's not set to 'none' */
+}
+
+
+/* Explore Fodd Section Design */
+
+.explore-food .card{
+    border:none;
+    background-color: tranpsarent;
+    border-radius: 0.9375rem;
+}
+.explore-food .card img{
+    border-radius: 0.9375rem;
+    object-fit: cover;
+
+}
+.explore-food .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:#b11717;
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid #fff;
+}
+.explore-food .card span del{
+    color: #333;
+    margin-left: 0.5rem;
+}
+
+.faq h4 span{
+    color: rgb(210, 150, 150);
+    font-size: 1.875rem;
+    margin-right: 0.3125rem;
+
+}
+.book-food{
+    width:100%;
+    background: url('/images/bg/bg-3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9225px;
+    padding:4.375rem 0;
+
+}
+ .newsletter{
+    width:100%;
+    margin:0 auto;
+}
+.newsletter .form-control{
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border: 0.1875rem solid grey;
+    color: black;
+    font-weight: 700;
+}
+.newsletter .form-control:hover,
+.newsletter .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(152, 74, 74) ;
+}
+.newsletter{
+    width: 75%;
+    height: 10rem;
+}
+
+.newsletter .main-btn{
+    width:100%;
+    margin-top: 1rem;
+} 
+
+/* Footer Styling */
+.footer {
+    background-color: #ffcccc; /* Light Red Background */
+    padding: 50px 0;
+}
+
+.footer-link {
+    margin: 0 15px; /* Space between links */
+    font-size: 18px;
+    color: #333; /* Default text color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #6e54b0; /* Change color on hover */
+}
+
+.footer-social a {
+    margin: 0 8px; /* Space between icons */
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    color: #8389ce; /* Change color on hover */
+}
+
+/* Center align text */
+.text-center {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-link, .footer-social a {
+        display: inline-block;
+        margin-bottom: 10px; /* Adds space in small screens */
+    }
+}
+
+
+/* Card Styling */
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Image Styling */
+.card img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect (for Desktops) */
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover img {
+        transform: scale(1.1);
+    }
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        transform: none !important; /* Prevents unwanted zooming on touch devices */
+    }
+}
+
+

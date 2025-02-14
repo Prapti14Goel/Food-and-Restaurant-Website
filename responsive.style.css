@@ -1,0 +1,26 @@
+
+
+@media (max-width: 991px) {
+
+    .text-content{
+        width: 100%
+    }
+}
+
+.navigation-wrap .navbar-brand img{
+    height: 3.8125rem;
+}
+.navigation-wrap{
+    text-align: center;
+    background-color: #fff;
+}
+
+.navigation-wrap .nav-link{
+
+       line-height: 1.875rem;
+
+}
+
+.top-banner{
+    padding: 9.375rem 0 9.375rem;
+}
